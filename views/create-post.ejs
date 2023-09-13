@@ -1,0 +1,32 @@
+<!-- views/create-post.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Post</title>
+    <!-- Enlaza Bootstrap CSS (asegúrate de que Bootstrap esté instalado en tu proyecto) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Crear Nuevo Post</h1>
+        <form action="/posts" method="POST">
+            <div class="form-group">
+                <label for="title">Título:</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Contenido:</label>
+                <textarea class="form-control" id="content" name="content" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Enlace de Imagen:</label>
+                <input type="text" class="form-control" id="imageUrl" name="imageUrl">
+            </div>
+            <button type="submit" class="btn btn-primary">Publicar</button>
+        </form>
+    </div>
+</body>
+</html>
