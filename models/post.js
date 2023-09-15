@@ -1,6 +1,7 @@
 // Importa las dependencias necesarias
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database.js'); // Reemplaza con la ruta correcta a tu archivo de configuración
+const { Sequelize, DataTypes } = require('sequelize');
+const { sequelize } = require('../config/database.js'); // Asegúrate de que la ruta sea correcta
+
 
 // Define el modelo para la tabla de posts
 const Post = sequelize.define('Post', {

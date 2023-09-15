@@ -4,7 +4,9 @@
   "description": "entrega final curso de front-end",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "mysql2": "^3.6.1",
     "sequelize": "^6.33.0"
   },
-  "devDependencies": {},
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }

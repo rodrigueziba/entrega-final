@@ -7,7 +7,8 @@ const postController = require('./controllers/postController'); // Reemplaza con
 // Rutas para la gestión de posts
 router.get('/', postController.getAllPosts); // Obtener todos los posts
 router.get('/posts/:id', postController.getPostById); // Obtener un post por ID
-router.post('/posts', postController.createPost); // Crear un nuevo post
+router.get('/create-post', postController.createPost); // Crear un nuevo post
+router.post('/create-post', postController.savePost); // Crear un nuevo post
 router.put('/posts/:id', postController.updatePost); // Actualizar un post existente
 router.delete('/posts/:id', postController.deletePost); // Eliminar un post por ID
 
