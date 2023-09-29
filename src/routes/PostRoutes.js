@@ -5,6 +5,7 @@ const router = express.Router();
 const postController = require('../controllers/postController'); 
 
 // Rutas para la gestión de posts
+router.get('/', postController.getAllPosts); // Obtener todos los posts
 router.get('/post/', postController.getAllPosts); // Obtener todos los posts
 router.get('/posts/:id', postController.getPostById); // Obtener un post por ID
 router.get('/post/create', postController.createPost); // Crear un nuevo post
