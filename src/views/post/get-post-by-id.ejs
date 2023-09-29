@@ -1,16 +1,5 @@
 <!-- views/get-post-by-id.ejs -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del Post</title>
-    <!-- Enlaza Bootstrap CSS (asegúrate de que Bootstrap esté instalado en tu proyecto) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Enlaza tu archivo CSS personalizado -->
-    <link rel="stylesheet" href="/styles.css">
-</head>
+<%- include('../templates/header', {titulo: "Post por ID" }); %>
 <body>
     <div class="container mt-5">
         <h1>Detalle del Post</h1>

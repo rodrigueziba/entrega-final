@@ -1,0 +1,31 @@
+<!-- views/create-post.ejs -->
+<%- include('../templates/header', {titulo: "Crear Post" }); %>
+<div class="container mt-5">
+    <h1> Crea tu post </h1>
+    
+        <form action="/post/save" method="post">
+            <div class="mb-3">
+                <label for="title" class="form-label">Tutulo del post</label>
+                <input type="text" class="form-control" id="titleInput" placeholder="Titulo del post" name="title">
+            </div>
+
+            <div class="mb-3">
+                
+                <label for="image_url" class="form-label">URL de la imagen</label>
+                <input type="text" class="form-control" id="image_urllInput1" placeholder="https://www...."
+                    name="image_url">
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="body" class="form-label">Escribe aqui la publicacion</label>
+                <textarea class="form-control" id="bodyTextarea1" rows="3" name="body"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear publicacion</button>
+
+        </form>
+
+</body>
+</html>
+<%- include('../templates/footer'); %>

@@ -1,0 +1,18 @@
+<!-- views/delete-post.ejs -->
+
+<%- include('../templates/header', {titulo: "Eliminar Post" }); %>
+<body>
+    <div class="container mt-5">
+        <h1>Eliminar Post</h1>
+        <div class="alert alert-danger" role="alert">
+            ¿Estás seguro de que deseas eliminar este post?
+        </div>
+        <form action="/post/delete/<%= post.id %>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-danger">Sí, Eliminar</button>
+            <a href="/post" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</body>
+</html>
+<%- include('../templates/footer'); %>
