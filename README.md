@@ -20,7 +20,7 @@ Es un proyecto que es la entrega final de un curso de Full Stack, desarrollad co
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/mi-foro-web.git
+   git clone https://github.com/rodrigueziba/entrega-final/
    ```
 
 2. Instala las dependencias:
